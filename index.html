@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        #blog-title{
+            text-align: center;
+            background-color: rgb(231, 233, 236);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="blog-title">-</h1>
+    </div>
+
+    <div id="user-status">
+        <p id="welcome-message">로그인하지 않았습니다.</p>
+        <button id="login-button">로그인</button>
+        <button id="logout-button" style="display: none;">로그아웃</button>
+    </div>
+
+    <div>
+        <h2>댓글 남기기</h2>
+        <input type="text" id="comment-input" placeholder="댓글을 입력하세요">
+        <button id="comment-button">댓글 추가</button>
+        <ul id="comment-list"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
